@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Acrylic Painting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="nav-wrapper">
+    <div class="sidenav">
+        <div class="erin">
+            <h1>
+            <a href="index.html">Erin Shi</a>
+            </h1>
+        </div>
+        <a href="oil.html">Oil Painting</a>
+    <div class="active-link">
+        <a href="acrylic.html">Acrylic Painting</a>
+    </div>
+        <a href="drawing.html">Drawing</a>
+        <a href="sculpture.html">Sculpture</a>
+        <a href="other.html">Other Art</a>
+        <a href="about.html">About</a>
+    </div>
+</div>
+<div class="main">
+    <br><br><br><br>
+    <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="acrylic/1.jpg" style="width:100%">
+                <div class="text">Anna</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="acrylic/2.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <img src="acrylic/3.jpg" style="width:100%">
+                <div class="text">Transfixed</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="acrylic/4.jpg" style="width:100%">
+                <div class="text">Escape</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="acrylic/5.jpg" style="width:100%">
+                <div class="text">STOP</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="acrylic/6.jpg" style="width:100%">
+                <div class="text">Trance</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="acrylic/7.jpg" style="width:100%">
+                <div class="text">Confined</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</div>
+</body>
+
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    }
+
+</script>
+</html>

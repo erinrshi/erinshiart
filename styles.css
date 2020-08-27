@@ -1,0 +1,143 @@
+body {
+  font-family: 'Abel', sans-serif;
+  margin: 10px;
+  margin-left: 15px;
+}
+
+body a{
+  text-decoration: none;
+}
+
+.sidenav {
+    margin: 10px;
+    margin-left: 50px;
+    font-size: 19px;
+    height: 100%; 
+    width: 140px;
+    position: fixed;
+    z-index: 1;
+    top: 10;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 5px;
+}
+  
+.sidenav a {
+    padding: 5px 2px 2px 5px;
+    text-decoration: none;
+    color:#717171;
+    display: block;
+}
+
+.main {
+  margin-left: 185px; 
+  padding: 6px 2px;
+}
+
+.sidenav a:hover {
+    color: #a06666;
+}
+.mail-active a{
+  color: black;
+}
+.mail-active :hover{
+  color: #a06666;
+}
+
+h1{
+    padding: 0;
+    font-weight: bold;
+    margin: 4;
+    font-size: 40px;
+}
+
+.active-erin a{
+  color:#804c4c;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  /*max-height: 100%;*/
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide images by default */
+.mySlides {
+  display: none;
+  text-decoration: none;
+}
+
+.profile-image-wrapper{
+  max-width: 500px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -4px;
+  padding: 4px;
+  color: #a06666;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 2px 1px 1px 2px;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 2px 1px 1px 2px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(60, 56, 56, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 16px;
+  padding: 2px 3px;
+  position: relative;
+  bottom: -15px;
+  width: 100%;
+  text-align: center;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.active-link a{
+  color: #a06666;
+}
+
+h3{
+  font-size: 1.65em;
+}
+h2{
+  font-size: 1.55em;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
