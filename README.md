@@ -1,2 +1,2 @@
-Erin Shi Art Website:
+# erinshiart
 https://erinrshi.github.io/erinshiart/
