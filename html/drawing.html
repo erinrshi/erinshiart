@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Drawing</title>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" href="styles.css">
+    <link rel = "stylesheet" href="../styles.css">
 </head>
 
 <body>
@@ -12,7 +12,7 @@
     <div class="sidenav">
         <div class="erin">
             <h1>
-            <a href="index.html">Erin Shi</a>
+            <a href="../index.html">Erin Shi</a>
             </h1>
         </div>
         <a href="oil.html">Oil Painting</a>
@@ -26,82 +26,51 @@
     </div>
 </div>
 <div class="main">
-    <br><br><br><br>
+    <br><br>
     <div class="slideshow-container">
 
         <div class="mySlides fade">
-                <img src="drawing/d3.jpg" style="width:100%">
+                <img src="../images/drawing/d3.jpg">
                 <div class="text">Glass Study</div>
             </div>
             <div class="mySlides fade">
-                <img src="drawing/d2.jpg" style="width:100%">
+                <img src="../images/drawing/d2.jpg">
                 <div class="text">NEON - self portrait</div>
             </div>
             <div class="mySlides fade">
-                <img src="drawing/d1.jpg" style="width:100%">
+                <img src="../images/drawing/d1.jpg">
                 <div class="text">Self Portrait x 3</div>
             </div>
             <div class="mySlides fade">
-                <img src="drawing/d4.jpg" style="width:100%">
+                <img src="../images/drawing/d4.jpg">
                 <div class="text">Duderstadt Center</div>
             </div>
             <div class="mySlides fade">
-                <img src="drawing/d5.jpg" style="width:100%">
+                <img src="../images/drawing/d5.jpg">
                 <div class="text">Scrunchies</div>
             </div>
             <div class="mySlides fade">
-                <img src="drawing/d6.jpg" style="width:100%">
+                <img src="../images/drawing/d6.jpg">
                 <div class="text">Addiction.</div>
             </div>
             <div class="mySlides fade">
-                <img src="drawing/d7.jpg" style="width:100%">
+                <img src="../images/drawing/d7.jpg">
                 <div class="text">Self Portrait from Mirror - One Hour</div>
             </div>
             <div class="mySlides fade">
-                <img src="drawing/d8.jpg" style="width:100%">
+                <img src="images/drawing/d8.jpg">
                 <div class="text">Skull Study</div>
             </div>
             <div class="mySlides fade">
-                <img src="drawing/d9.jpg" style="width:100%">
+                <img src="../images/drawing/d9.jpg">
                 <div class="text">Nude Study</div>
             </div>
 
-        
-        
-            <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 </div>
-            <br>
-            
 </body>
 
-<!--javacript-->
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-    showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-    showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex-1].style.display = "block";
-    }
-
-</script>
+<script src="../js\home.js"></script>
 </html>

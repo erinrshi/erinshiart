@@ -58,17 +58,30 @@ h1{
 * {box-sizing:border-box}
 
 .slideshow-container {
-  /*max-height: 100%;*/
-  max-width: 100%;
+  /*max-width: 100%;*/
   position: relative;
   margin: auto;
 }
 
-/* Hide images by default */
-.mySlides {
+/* default hide img*/
+.mySlides{
   display: none;
   text-decoration: none;
 }
+
+.mySlides img{
+  max-width:95%;
+  max-height:95%;
+  height: auto;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+
+}
+
 
 .profile-image-wrapper{
   max-width: 500px;
@@ -81,7 +94,7 @@ h1{
   width: auto;
   margin-top: -4px;
   padding: 4px;
-  color: #a06666;
+  color: #717171;
   font-weight: bold;
   font-size: 25px;
   transition: 0.6s ease;
@@ -94,13 +107,13 @@ h1{
   border-radius: 2px 1px 1px 2px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(60, 56, 56, 0.8);
+.prev, .next :hover{
+  color: #a06666;
 }
 
 /* Caption text */
 .text {
-  color: black;
+  color: #5b5b5b;
   font-size: 16px;
   padding: 2px 3px;
   position: relative;
