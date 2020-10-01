@@ -36,7 +36,7 @@ function switchSlide() {
         slideIndex = 1
     }
     x[slideIndex-1].style.display = "block";
-    setTimeout(switchSlide, 6000);
+    setTimeout(switchSlide, 3000);
 }
 
 // < > space keys to switch
